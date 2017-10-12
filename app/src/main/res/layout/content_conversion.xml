@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="hellointention.fandi.cs.brandies.edu.hellointention.Conversion"
+    tools:showIn="@layout/activity_conversion">
+
+    <TextView
+        android:id="@+id/titleChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/childMain"
+        android:textAlignment="center"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/kiloChildLabel"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_weight="1"
+        android:text="@string/kilometers"
+        android:textSize="20sp"
+        android:layout_below="@+id/convert"
+        android:layout_alignLeft="@+id/titleChild"
+        android:layout_alignStart="@+id/titleChild" />
+
+    <EditText
+        android:id="@+id/kiloChildRes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kiloChildLabel"
+        android:layout_alignBottom="@+id/kiloChildLabel"
+        android:layout_alignEnd="@+id/titleChild"
+        android:layout_alignRight="@+id/titleChild"
+        android:inputType="number"
+        android:text="@string/empty"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mileChildLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/kiloChildLabel"
+        android:layout_alignStart="@+id/kiloChildLabel"
+        android:layout_below="@+id/kiloChildRes"
+        android:layout_marginTop="32dp"
+        android:text="@string/miles"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/mileChildRes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/mileChildLabel"
+        android:layout_alignBottom="@+id/mileChildLabel"
+        android:layout_alignLeft="@+id/kiloChildRes"
+        android:layout_alignStart="@+id/kiloChildRes" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignBaseline="@+id/clear"
+        android:layout_alignBottom="@+id/clear"
+        android:layout_alignRight="@+id/mileChildRes"
+        android:layout_alignEnd="@+id/mileChildRes" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:layout_alignBaseline="@+id/about"
+        android:layout_alignBottom="@+id/about"
+        android:layout_alignLeft="@+id/convert"
+        android:layout_alignStart="@+id/convert" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/about"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/titleChild"
+        android:layout_alignStart="@+id/titleChild" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/convert"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/titleChild"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

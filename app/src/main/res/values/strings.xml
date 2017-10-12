@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">FanDi.HW1assignment2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_conversion">Conversion</string>
+    <string name="defaultMain">Ready for a conversion?</string>
+    <string name="childMain">Convert kilometers to miles</string>
+    <string name="defaultChild">Conversion</string>
+    <string name="empty"></string>
+    <string name="miles">Miles</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="go">GO</string>
+    <string name="back">RETURN</string>
+    <string name="clear">CLEAR</string>
+    <string name="about">ABOUT</string>
+    <string name="convert">CONVERT</string>
+    <string name="zero">0</string>
+    <string name="waiting">Waiting for a valid conversion</string>
+</resources>
